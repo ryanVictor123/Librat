@@ -1596,17 +1596,6 @@ function redzlib:MakeWindow(Configs)
 		Name = "Hub"
 }), "Main")
 
-local BackgroundImage = Instance.new("ImageLabel")
-BackgroundImage.Name = "CustomBackground"
-BackgroundImage.Size = UDim2.fromScale(1, 1)
-BackgroundImage.Position = UDim2.fromScale(0, 0)
-BackgroundImage.BackgroundTransparency = 1
-BackgroundImage.ImageTransparency = 0          -- ajuste (0 = visível forte, 1 = quase invisível)
-BackgroundImage.ScaleType = Enum.ScaleType.Crop   -- ou Fit, Slice, Tile...
-BackgroundImage.Image = "rbxassetid://114708236795272"   -- ← coloque seu ID
-BackgroundImage.ZIndex = -10                       -- fica atrás de tudo
-BackgroundImage.Parent = MainFrame
-
 	Make("Gradient", MainFrame, {
 		Rotation = 45
 	})MakeDrag(MainFrame)
